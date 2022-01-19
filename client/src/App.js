@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   const [pages] = useState([
-    //this is the pages
+    //these are the pages
     {
       name: 'about me'
     },

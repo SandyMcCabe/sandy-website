@@ -1,24 +1,24 @@
 import React from 'react';
 
 import PageContent from '../PageContent';
-import About    
+import About from '../About';
 import Portfolio from '../Portfolio';
-import Contact
+import Contact from '../Contact';
 
-function Page ({currentPage}) {
+function Page({ currentPage }) {
     const renderPage = () => {
-        switch(currentPage.name) {
+        switch (currentPage.name) {
             case 'about me':
                 return <About />;
-            case 'portfolio'
-            return <Portfolio />;
-            case 'contact'
-            default: 
-            return <About />;
+            case 'portfolio':
+                return <Portfolio />;
+            case 'contact':
+                return <Contact />
+            default:
+                return <About />;
         }
     }
 }
-return
 
+export default Page;
 
-// finish this page
