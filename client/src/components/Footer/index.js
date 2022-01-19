@@ -1,10 +1,27 @@
 import React from 'react';
 
 function Footer() {
+    const icons = [
+        {
+            name: 'fab fa-github',
+            link: 'link to gH'
+        },
+        {
+            name: 'fab fa-linkedin',
+            link: 'link to LI'
+        }
+    ]
+
     return (
-        <section className="footer fixed-bottom mh-25">
-            <h1 id="about"></h1> 
-        </section>
+        <footer className="flex-flow px-1">
+            {icons.map(icon => (
+                <a href={icon.link} key={icon.name} target='_blank' rel='noopener noreferer'>
+                    <i className= {icon.name}> </i>
+                </a>
+            )
+                )}
+            
+        </footer>
     );
 }
 

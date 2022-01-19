@@ -1,4 +1,5 @@
 import React from 'react';
+import{CapitalizeFirstLetter} from '../../utils/helpers';
 
 import PageContent from '../PageContent';
 import About from '../About';
@@ -17,7 +18,15 @@ function Page({ currentPage }) {
             default:
                 return <About />;
         }
-    }
+    };
+    return(
+        <section>
+            <h2>{CapitalizeFirstLetter(currentPage.name)}</h2>
+            <PageContent>
+                {renderPage()}
+            </PageContent>
+        </section>
+    );
 }
 
 export default Page;
