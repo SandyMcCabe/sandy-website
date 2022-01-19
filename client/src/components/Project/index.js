@@ -4,11 +4,17 @@ function Project({ project }) {
     const { name, repo, link, description } = project;
 
     return (
-        <div>
-            <img />
-            <div>
-                <h3></h3>
-                <p></p>
+        <div className='project' key={name}>
+            <img
+            src={require(`../../assets/projects/${name}.jpg`)}
+            alt={(name)}
+            className='project-bg' />
+            <div className='project-text'>
+                <h3>
+                    <a href={link}>{(name)}</a>{' '}
+                    <a href={repo}><i className='fab fa-github'></i></a>
+                     </h3>
+                <p>{description}</p>
             </div>
         </div>
     );
