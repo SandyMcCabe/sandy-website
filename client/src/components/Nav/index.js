@@ -1,5 +1,6 @@
-import React, {useEffect} from '../../utils/helpers';
-import Page from '../Page';
+import React, {useEffect} from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
+
 
 function Nav(props) {
     const{
@@ -8,14 +9,14 @@ function Nav(props) {
         currentPage,
     } = props;
     useEffect(() => {
-        document.title = capitalizeFirstLetter(CurrentPage.name);
+        document.title = capitalizeFirstLetter(currentPage.name);
     }, [currentPage]
     );
     return(
         <nav>
             <ul className='flex-flow'>
                 {pages.map((Page)=>(
-                <li className={`mx-5 ${currentPage.name === page.name && 'navActive'}`} key={Page.name} >
+                    <li className={`mx-5 ${currentPage.name === Page.name && 'navActive'}`} key={Page.name} >
                     <span onClick={() => setCurrentPage(Page) }> {capitalizeFirstLetter(Page.name)} </span>
                 </li>
                 ))}

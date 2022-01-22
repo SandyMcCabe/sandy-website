@@ -4,18 +4,18 @@ function Footer() {
     const icons = [
         {
             name: 'fab fa-github',
-            link: 'link to gH'
+            link: 'https://github.com/SandyMcCabe'
         },
         {
             name: 'fab fa-linkedin',
-            link: 'link to LI'
+            link: 'https://www.linkedin.com/in/sandy-mccabe-415221176/'
         }
     ]
 
     return (
         <footer className="flex-flow px-1">
             {icons.map(icon => (
-                <a href={icon.link} key={icon.name} target='_blank' rel='noopener noreferer'>
+                <a href={icon.link} key={icon.name} rel='noopener noreferer'>
                     <i className= {icon.name}> </i>
                 </a>
             )
@@ -24,6 +24,5 @@ function Footer() {
         </footer>
     );
 }
-
 
 export default Footer; 

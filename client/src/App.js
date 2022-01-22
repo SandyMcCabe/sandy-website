@@ -35,6 +35,7 @@ function App() {
       <Page currentPage={currentPage}>
       </Page>
     </main>
+    <Footer />
    </div>
   );
 }
