@@ -16,8 +16,8 @@ function Nav(props) {
         <nav>
             <ul className='flex-flow'>
                 {pages.map((Page)=>(
-                    <li className={`mx-5 ${currentPage.name === Page.name && 'navActive'}`} key={Page.name} >
-                    <span onClick={() => setCurrentPage(Page) }> {capitalizeFirstLetter(Page.name)} </span>
+                    <li className={`mx-5 ${currentPage.name === Page.name && 'navActive'}`} key={Page.name}>
+                    <span onClick={() => setCurrentPage(Page)}>{capitalizeFirstLetter(Page.name)}</span>
                 </li>
                 ))}
             </ul>

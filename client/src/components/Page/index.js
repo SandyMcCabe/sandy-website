@@ -1,7 +1,5 @@
 import React from 'react';
-import{ capitalizeFirstLetter } from '../../utils/helpers';
-
-
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 import PageContent from '../PageContent';
 import About from '../About';
@@ -21,7 +19,7 @@ function Page({ currentPage }) {
                 return <About />;
         }
     };
-    return(
+    return (
         <section>
             <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
             <PageContent>

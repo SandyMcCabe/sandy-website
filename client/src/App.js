@@ -24,19 +24,20 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-   <div>
-     <Header>
-       <Nav 
-       pages={pages}
-       setCurrentPage={setCurrentPage}
-       > </Nav>
-     </Header>
-    <main>
-      <Page currentPage={currentPage}>
-      </Page>
-    </main>
-    <Footer />
-   </div>
+    <div>
+      <Header>
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        ></Nav>
+      </Header>
+      <main>
+        <Page currentPage={currentPage}>
+        </Page>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
