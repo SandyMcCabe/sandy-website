@@ -1,7 +1,7 @@
 
-code {
+/* code {
   font-family: "Lucida Console", "Courier New", monospace;
-}
+} */
 
 /* ******************************* */
 
@@ -13,7 +13,7 @@ code {
 
 body {
   margin: 0;
-  font-family: "Lucida Console", "Courier New", monospace;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 main {
@@ -57,13 +57,13 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-header {
+/* header {
   background: var(--dark);
 }
 
 header a {
   color: var(--light);
-}
+} */
 
 button {
   font-size: 1rem;
@@ -137,20 +137,9 @@ header h1 {
   z-index: 2;
 }
 
-/* header img {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: auto;
-  filter: sepia(1) opacity(60%);
-  opacity: 0.5;
-} */
-
 nav {
   position: relative;
-  font-family: "Lucida Console", "Courier New", monospace;
-  /* font-family: 'Aladin', cursive; */
+  /* font-family: "Lucida Console", "Courier New", monospace; */
   font-size: 2.5rem;
   margin: 30px 20px;
 }

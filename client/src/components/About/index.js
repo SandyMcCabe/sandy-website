@@ -1,5 +1,6 @@
 import React from 'react';
 import me3 from '../../assets/projects/me3.jpg';
+// import me3 from 'client\src\assets\projects\me3.jpg';
 
 function About() {
     return (
